@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="styles_home.css"> -->
+  <!-- <link rel="stylesheet" href="styles_methoden.css"> -->
+  <link rel="stylesheet" href="styles_portrait.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Bad+Script|Nothing+You+Could+Do" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="header_background_container"> </div>
+  <div id="header_container">
+
+    <img id="logo" src="images/logo_white_matt.png" alt="Logo">
+    <a href="javascript:void(0);" onclick="myFunction()">
+      <img id="burgerMenu" class="inactiveMenu" src="images/menu_icon.png" alt="BurgerMenu">
+    </a>
+    <div class="topnav_container" id="topnav_container">
+      <div id="topnav_wrapper">
+      <ul class="topnav">
+        <li> <a href="home.html">Home</a> </li>
+        <li> <a href="methoden.html">Methoden</a> </li>
+        <li> <a class="active" href="portrait.html">Portrait</a> </li>
+        <li> <a href="praxis.html">Praxis</a> </li>
+        <li> <a href="kosten.html">Kosten</a> </li>
+        <li id="kontakt"> <a href="kontakt.html">Kontakt</a> </li>
+      </ul>
+    </div>
+    </div> <!-- topnav_container -->
+
+  </div> <!-- header_container -->
+
+
+  <div class ="navBackground" id="navBackground"></div>
+  <div class="headerPadding"> </div>
+
+  <div class="main_content">
+
+    <div class="portrait_container">
+      <div class="portrait_img">
+        <img id="portrait_img" src="images/portrait.jpg" alt="portrait_brigitta_meier">
+        <div class="img_desc">Brigitta Meier, dipl. Shiatsu-Therapeutin</div>
+      </div>
+
+      <h3>Portrait</h3>
+      <div class="table_container">
+        <table class="portrait_table">
+          <tr>
+            <td>2011</td>
+            <td>Diplomarbeit</td>
+          </tr>
+          <tr>
+            <td>2007</td>
+            <td>Er&ouml;ffnung der Praxis in Hitzkirch</td>
+          </tr>
+          <tr>
+            <td>2005-2009</td>
+            <td>Ausbildung zur Shiatsutherapeutin an der Heilpraktikerschule in Luzern</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <ul>
+                <li>Shiatsu</li>
+                <li>Moxibustion</li>
+                <li>Schr&ouml;pfen</li>
+                <li>Narben entst&ouml;ren</li>
+                <li>Bachbl&uuml;ten</li>
+              </ul>
+
+            </td>
+          </tr>
+          <tr>
+            <td>1985-2010</td>
+            <td>Fachlehrerin an der Primarschule Hitzkirch</td>
+          </tr>
+          <tr>
+            <td>1981-1985</td>
+            <td>Ausbildung zur Fachlehrerin im Seminar Baldegg</td>
+          </tr>
+          <tr>
+            <td>1963</td>
+            <td>Geboren in Hitzkirch</td>
+          </tr>
+        </table>
+      </div> <!-- table container -->
+
+      <h4>Weiterbildung</h4>
+
+      <div class="table_container">
+        <table class="portrait_table">
+          <col align="right">
+          <col align="left">
+
+          <tr>
+            <td>2009</td>
+            <td>Psychozon-Massage am Fuss</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>Gua Sha</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>Bindegewebstechnik, Faszien</td>
+          </tr>
+
+          <tr>
+            <td>2011</td>
+            <td>Shiatsu in der Schwangerschaft</td>
+          </tr>
+          <tr>
+            <td>2014-2016</td>
+            <td>Bindegewebstechnik / Faszien: Grundkurs, Aufbaukurse 1 - 4</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>Faszien-Fitness-Kurs</td>
+          </tr>
+
+        </table>
+      </div> <!-- table container -->
+
+      <h4> Mitgliedschaft </h4>
+      <div class="table_container">
+        <table class="portrait_table">
+          <col align="right">
+          <col align="left">
+
+          <tr>
+            <td>SGS</td>
+            <td>Shiatsugesellschaft Schweiz</td>
+          </tr>
+          <tr>
+            <td>ASCA</td>
+            <td>Schweizerische Stiftung f&uuml;r Komplement&auml;rmedizin</td>
+          </tr>
+          <tr>
+            <td>EMR</td>
+            <td>ErfahrungsMedizinische Register</td>
+          </tr>
+
+        </table>
+      </div> <!-- table container -->
+
+
+    </div>
+
+  </div> <!-- main_content -->
+
+  <div class="footer">
+
+  </div>
+
+  <script>
+  function myFunction() {
+      var menu = document.getElementById("burgerMenu");
+      var nav_cont = document.getElementById("topnav_container");
+      var nav_bg = document.getElementById("navBackground");
+      if (menu.className === "inactiveMenu") {
+          menu.className = "activeMenu";
+          nav_cont.className += ' Responsive';
+          nav_bg.className += ' Responsive'
+      } else {
+          menu.className = "inactiveMenu";
+          nav_cont.className = "topnav_container";
+          nav_bg.className = "navBackground";
+      }
+  }
+  </script>
+
+</body>
+
+</html>

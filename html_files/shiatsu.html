@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_submet.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Bad+Script|Nothing+You+Could+Do" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="header_background_container"> </div>
+  <div id="header_container">
+
+    <img id="logo" src="images/logo_white_matt.png" alt="Logo">
+    <a href="javascript:void(0);" onclick="myFunction()">
+      <img id="burgerMenu" class="inactiveMenu" src="images/menu_icon.png" alt="BurgerMenu">
+    </a>
+    <div class="topnav_container" id="topnav_container">
+      <div id="topnav_wrapper">
+      <ul class="topnav">
+        <li> <a href="home.html">Home</a> </li>
+        <li> <a class="active" href="methoden.html">Methoden</a> </li>
+        <li> <a href="portrait.html">Portrait</a> </li>
+        <li> <a href="praxis.html">Praxis</a> </li>
+        <li> <a href="kosten.html">Kosten</a> </li>
+        <li id="kontakt"> <a href="kontakt.html">Kontakt</a> </li>
+      </ul>
+    </div>
+    </div> <!-- topnav_container -->
+
+  </div> <!-- header_container -->
+
+
+  <div class ="navBackground" id="navBackground"></div>
+  <div class="headerPadding"> </div>
+
+  <div class="main_content">
+    <div class="submet_container">
+
+      <div class="met_nav_container">
+        <table class="met_nav_table">
+          <col align="right">
+          <col align="center">
+          <col align="right">
+
+          <tr>
+            <td><a href="bachblueten.html">&lt;- vorherige</a></td>
+            <!-- <td>&Uuml;bersicht</td> -->
+            <td><a href="bindegewebsmassage.html">n&auml;chste -&gt;</a></td>
+          </tr>
+
+        </table>
+      </div>
+
+      <h3>Shiatsu</h3>
+      <div class="flex_container">
+        <div class="flex_img_cont">
+          <div style="background-image: url(images/shiatsu_2_56.jpg);">
+          </div>
+        </div>
+
+        <div class="flex_text">
+          Shiatsu beruht auf der traditionellen chinesischen Philosophie und Gesundheitslehre.
+          Diese geht davon aus, dass der Körper von der Lebensenergie Qi durchströmt wird, die
+           in den Meridianen fliesst. Ist dieser Energiefluss gestört, entstehen Beschwerden
+           und Krankheiten.
+           Shiatsu ist für Menschen jeden Alters geeignet. Die Behandlung wird auf einer Matte
+           am Boden oder auf einer Liege am bekleideten Körper ausgeführt. Mit fliessenden
+           Bewegungen und sanftem Druck werden Stauungen und Blockaden gelöst. Die Therapie
+           unterstützt den natürlichen Heilungsprozess, stärkt das Immunsystem und wird auch
+           präventiv angewendet.
+        </div>
+      </div> <!-- flex_container -->
+
+      <div class="flex_container">
+        <div class="flex_img_cont">
+          <div style="background-image: url(images/shiatsu_2_56.jpg);">
+          </div>
+        </div>
+
+        <div class="flex_text">
+          <h4>Anwendungsgebiete</h4>
+          <ul>
+            <li>Behandlung von Beschwerden: Rückenschmerzen, Verstopfung, Durchfall, Kopfschmerzen,
+             Schlafstörungen, Nacken- und Schulterprobleme, Asthma, etc.</li>
+            <li>Psychische Probleme: Ängste, Nervosität, Lampenfieber, etc. </li>
+            <li>Aktivieren der Selbstheilungskräfte </li>
+            <li>Entspannung und Förderung des Wohlbefindens </li>
+            <li>Schwangerschaftsbegleitung</li>
+          </ul>
+
+        </div>
+
+
+      </div> <!-- flex_container -->
+
+    </div> <!-- submet_container -->
+
+  </div> <!-- main_content -->
+
+  <div class="footer">
+
+  </div>
+
+  <script>
+  function myFunction() {
+      var menu = document.getElementById("burgerMenu");
+      var nav_cont = document.getElementById("topnav_container");
+      var nav_bg = document.getElementById("navBackground");
+      if (menu.className === "inactiveMenu") {
+          menu.className = "activeMenu";
+          nav_cont.className += ' Responsive';
+          nav_bg.className += ' Responsive'
+      } else {
+          menu.className = "inactiveMenu";
+          nav_cont.className = "topnav_container";
+          nav_bg.className = "navBackground";
+      }
+  }
+  </script>
+
+</body>
+
+</html>

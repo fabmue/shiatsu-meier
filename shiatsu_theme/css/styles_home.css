@@ -1,0 +1,115 @@
+/*
+	Theme Name: shiatsu-theme-home
+	Author: Fabian Müller
+	Version: 1.0
+	Template: shiatsu-theme
+	Template Version: 1.0
+*/
+
+p, img {
+  margin: 0;
+  padding: 0;
+}
+
+#pic_statement_container{
+  overflow: auto;
+  position: relative;
+  display: block;
+  /*border: 1px solid red;*/
+  margin-bottom: 60px;
+
+}
+
+
+
+#statement {
+  display: inline-block;
+  font-family: 'Nothing You Could Do', cursive;
+  position: absolute;
+  bottom: calc(25px + 2%);
+  margin-left: 2%;
+  color: white;
+  font-size: 25px;
+}
+
+
+#home_long_img {
+  width: 100%;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3) ;
+}
+
+#home_preview_container a:link,
+#home_preview_container a:visited,
+#home_preview_container a:hover,
+#home_preview_container a:active {
+  text-decoration: none;
+}
+
+div.home_preview{
+  width: 96%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+div.home_preview img {
+  height: 90px;
+  width: auto;
+  margin: 5px;
+  margin-right: 20px;
+  display: inline-block;
+  float: left;
+}
+
+div.home_preview p {
+  color: white;
+  margin: 10px;
+}
+
+div.home_preview p.preview_title{
+  font-weight: bold;
+}
+div.home_preview p.preview_text {
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.home_preview p.preview_mehr {
+  margin-top: 0;
+  margin-right: 20px;
+  float: right;
+  /*color: #237B3F;*/
+  color: white;
+  font-weight: bold;
+
+}
+
+
+@media screen and (max-width: 950px){
+
+
+
+}
+
+@media screen and (max-width: 600px){
+
+  #home_main_img{
+    /*clip: rect(0px, 100px, 40px, 0px);*/
+    width: calc(100% - 10px);
+    height: auto;
+    float: none;
+    margin: 0;
+
+  }
+
+}

@@ -1,0 +1,286 @@
+/*
+Theme Name: shiatsu-theme
+Version: 1.0
+Author: Fab Mueller
+*/
+body {
+    background-color: #262626;
+    background-image: url(http://shiatsu-meier.ch/WordPress/wp-content/uploads/2016/11/background_small.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* BEGIN navigation bar */
+#header_background_container {
+  background-image: url(http://shiatsu-meier.ch/WordPress/wp-content/uploads/2016/11/background_small.jpg);
+  background-color: #202020;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 105px;
+  z-index: 1;
+  position: fixed;
+  box-shadow: 0px 3px 5px  rgba(0, 0, 0, 0.5);
+}
+
+div.headerPadding{
+  width: 100%;
+  height: 105px;
+  background-color: none;
+  position: static;
+  /*border: 1px solid green;*/
+
+}
+
+#header_container{
+  width: 100%;
+  height: 105px;
+  background-color: rgba(0, 0, 0, 0.3) ;
+  position: fixed;
+  z-index: 3;
+  display: block;
+
+
+}
+
+.navBackground {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  z-index: 2;
+  margin-top: 105px;
+  display: none;
+
+}
+
+#logo{
+  position: static;
+  float: left;
+  z-index: 3;
+  width: 276px;
+  max-width: 70%;
+  height: auto;
+  margin: 15px 0 0 15px;
+
+}
+
+#burgerMenu{
+  height: 20px;
+  width: auto;
+  margin-top: 65px;
+  margin-right: 15px;
+  z-index: 3;
+  display: none;
+  position: relative;
+  float: right;
+
+}
+
+.topnav_container{
+  width: 620px;
+  height: 105px;
+  background-color: none;
+  border: 1px solid none;
+  float: right;
+  position: relative;
+  /*border: 1px solid orange;*/
+  display: block;
+}
+
+ul.topnav {
+  position: absolute;
+  padding: 0;
+  margin-top: 55px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: none;
+  z-index: 2;
+  /*border: 1px solid red;*/
+}
+
+ul.topnav li {
+  float: left;
+
+}
+
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  margin: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Sans-Serif;
+
+}
+ul.topnav li a.active {
+  /*background-color: green;*/
+  color: #237B3F;
+  /*border: 1px solid white;
+  border-radius: 5px; */
+}
+
+
+ul.topnav li a:hover:not(.active) {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}
+
+html, body { height: 100%;}
+/*body > .main_content { height: auto; min-height: 100%; }*/
+
+
+body > .main_content {
+  /*height: auto;*/
+  min-height: calc(100% - 185px);
+}
+
+.footer{
+/*display: none;*/
+clear: both;
+position: relative;
+z-index: 10;
+height: 40px;
+margin-top: 40px;
+background-color: rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 950px){
+
+  #header_container{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #header_background_container {
+    height: 140px;
+  }
+
+  div.headerPadding{
+    height: 140px;
+  }
+
+  body > .main_content {
+    min-height: calc(100% - 220px);
+  }
+
+  .topnav_container {
+    display: block;
+    width: 100%;
+    text-align: center;
+    float: none;
+    position: fixed;
+
+  }
+  #topnav_wrapper{
+    width: 565px;
+    height: 50px;
+    margin-top: 98px;
+    display: inline-block;
+    /*border: 1px solid blue;*/
+
+  }
+  .navBackground{
+    display: block;
+  }
+  ul.topnav {
+    margin-top: 4px;
+  }
+
+  ul.topnav li a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 6px 4px 6px 4px;
+  }
+
+  ul.topnav li a:hover:not(.active) {
+    margin: 6px 4px 4px 2px;
+    padding-bottom: 4px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px){
+
+    #header_container{
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    #header_background_container {
+      height: 105px;
+    }
+
+    div.headerPadding{
+      height: 105px;
+    }
+
+    .topnav_container {
+      display: none;
+    }
+
+    .topnav_container.Responsive {
+      display: block;
+      width: 100%;
+      text-align: none;
+      float: none;
+      position: fixed;
+    }
+
+    #topnav_wrapper {
+      margin-top: 110px;
+      width: inherit;
+      height: auto;
+
+    }
+
+    .navBackground {
+      display: none;
+    }
+
+    .navBackground.Responsive {
+      display: block;
+      position: fixed;
+      height: 800px;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #burgerMenu {
+      display: inline-block;
+    }
+
+    ul.topnav {
+      position: static;
+      margin-left: 10px;
+      margin-right: 10px;
+
+    }
+
+    ul.topnav li {float: none;}
+
+    ul.topnav li a {
+      padding: 8px;
+      margin: 8px;
+
+    }
+    ul.topnav li a:hover:not(.active) {
+      margin-bottom: 6px;
+      padding-bottom: 6px;
+    }
+}
+/* END navigation bar */

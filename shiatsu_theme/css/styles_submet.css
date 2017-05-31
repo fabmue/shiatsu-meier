@@ -1,0 +1,107 @@
+.submet_container{
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: auto;
+
+  /*border: 1px solid red;*/
+  color: white;
+}
+
+.met_nav_table {
+  width: 100%;
+  /*border: 1px solid red;*/
+  padding: 10px;
+  text-align: center;
+}
+
+.met_nav_table tr td:first-child{
+  text-align: left;
+}
+.met_nav_table tr td:last-child{
+  text-align: right;
+}
+
+.met_nav_table a {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 25px;
+
+}
+
+.met_nav_table a:link,
+.met_nav_table a:visited,
+.met_nav_table a:hover,
+.met_nav_table a:active {
+
+  text-decoration: none;
+  color: white;
+}
+
+.flex_container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+}
+
+.flex_img_cont {
+  flex-grow: 1;
+  flex-basis: 35%;
+  position: relative;
+  /*border: 4px solid rgba(255,255,255,1);*/
+  /*border-radius: 5px;*/
+  min-height: 100px;
+  margin: 10px;
+
+}
+
+.flex_img_cont div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.flex_text {
+  flex-grow: 1;
+  flex-basis: 50%;
+  /*background-color: rgba(255,255,255,0.2);*/
+  background-color: rgba(128,128,128,0.4);
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.submet_container h3 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+
+
+}
+
+.submet_container .flex_text{
+
+}
+.submet_container .flex_text h4 {
+  margin-left: 0;
+  margin-top: 0;
+  color: #58B376;
+}
+
+.submet_container .flex_text ul {
+  /*padding-left: 20px;*/
+}
+.submet_container .flex_text li {
+  margin-bottom: 10px;
+}
